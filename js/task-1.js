@@ -1,5 +1,6 @@
 function makeTransaction(quantity, pricePerDroid) {
-    const value = `You ordered ${quantity} droids worth ${pricePerDroid} credits!`;
+    const fullPrice = pricePerDroid * quantity;
+    const value = `You ordered ${quantity} droids worth ${fullPrice} credits!`;
     return value;
 }
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
